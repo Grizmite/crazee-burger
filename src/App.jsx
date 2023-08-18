@@ -1,15 +1,12 @@
-import LoginPage from "./components/LoginPage"
+// App.jsx
+import LoginPage from "./components/pages/LoginPage";
 
-
-function App(){
-
-  return(
-
-    <LoginPage />
-  )
-
-
+function App() {
+  return (
+    <div>
+      <LoginPage />
+    </div>
+  );
 }
 
-
-export default App
+export default App;
