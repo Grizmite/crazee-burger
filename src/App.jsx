@@ -1,21 +1,9 @@
-import { useState } from "react"
+import { LoginPage } from "./components/LoginPage"
 
 function App(){
 
-  //state (donnés, états)
+  return <LoginPage />
 
-  
-
-  //comportement (gestion des evenements)
-
-
-  //Rendu (render)
-  return(
-
-    <div>
-
-    </div>
-  );
 
 }
 
