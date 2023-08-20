@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LoginPage />} />
       <Route path="*" element={ <ErrorPage /> } />
-      <Route path="/order" element={<OrderPage />} />
+      <Route path="/order/:username" element={<OrderPage />} />
 
     </Routes>
   
