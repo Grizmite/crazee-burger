@@ -1,5 +1,5 @@
 // LoginPage.jsx
-import LoginForm from "./login/LoginForm";
+import LoginForm from "./LoginForm";
 
 function LoginPage() {
   return (
