@@ -1,5 +1,6 @@
 // LoginForm.jsx
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function LoginForm() {
   const [inputValue, setInputValue] = useState("");
@@ -22,6 +23,7 @@ function LoginForm() {
         <h2>Connexion</h2>
         <input value={inputValue} onChange={handleChange} type="text" placeholder="Entrez votre nom..." required />
         <button>Connectez-vous</button>
+        <Link to="/order">Vers Order Page</Link>
       </form>
     </div>
   );
