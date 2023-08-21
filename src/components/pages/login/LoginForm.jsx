@@ -37,7 +37,6 @@ function LoginForm() {
 
 const LoginFormStyle = styled.div`
 background: red;
-display: flex;
 `;
 
 
