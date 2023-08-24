@@ -2,7 +2,7 @@
 import { styled } from 'styled-components';
 
 // eslint-disable-next-line react/prop-types
-export default function InputForm({ value, onChange, insertBeforeInput, ...extraProps }) {
+export default function Input({ value, onChange, insertBeforeInput, ...extraProps }) {
 
   //AFFICHAGE
   return (

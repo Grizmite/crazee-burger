@@ -3,7 +3,7 @@ import { useState } from "react";
 import { /*Link*/ useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { BiSolidChevronRight } from "react-icons/bi"
-import InputForm from "./InputForm";
+import TextInput from "./TextInput";
 import { BsPersonCircle } from "react-icons/bs";
 
 //import { theme } from "src/components/theme/index.js"
@@ -33,7 +33,7 @@ function LoginForm() {
         <h1>Bienvenue chez nous !</h1>
         <hr />
         <h2>Connectez-vous</h2>
-        <InputForm value={ inputValue } onChange={ handleChange } placeHolder={"Entrez votre nom"} insertBeforeInput={ <BsPersonCircle className="icon"/>} required />
+        <TextInput value={ inputValue } onChange={ handleChange } placeHolder={"Entrez votre nom"} insertBeforeInput={ <BsPersonCircle className="icon"/>} required />
         <button className="button-with-icon">
         <span>Connexion</span>
         <BiSolidChevronRight className="icon" />
