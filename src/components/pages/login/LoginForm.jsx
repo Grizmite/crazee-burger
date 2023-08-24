@@ -43,8 +43,7 @@ function LoginForm() {
   );
 }
 
-const LoginFormStyle = styled.div`
-background: green;
+const LoginFormStyle = styled.form`
 text-align: center;
 max-width: 500px;
 min-width: 400px;
@@ -124,8 +123,8 @@ input{
   border: none;
   font-size: 15px;
   color: #17161a;
-  /* width: 100%;
-  display: flex; */
+   width: 100%;
+  display: flex;
 }
 
 &::placeholder{
