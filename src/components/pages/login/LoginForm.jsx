@@ -3,6 +3,7 @@ import { useState } from "react";
 import { /*Link*/ useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { BsPersonCircle } from "react-icons/bs"
+import { BiSolidChevronRight } from "react-icons/bi"
 //import { theme } from "src/components/theme/index.js"
 
 function LoginForm() {
@@ -33,7 +34,10 @@ function LoginForm() {
         <BsPersonCircle className="icon" />
         <input value={inputValue} onChange={handleChange} type="text" placeholder="Entrez votre nom..." required />
         </div>
-        <button>Connexion</button>
+        <button className="button-with-icon">
+        <span>Connexion</span>
+        <BiSolidChevronRight className="icon" />
+        </button>
       </LoginFormStyle>
     </div>
   );
@@ -76,10 +80,44 @@ h2{
   margin: 18px 0; /*Peut être pris en charge par le parent */
 }
 
-.icon{
+.button-with-icon{
+  width: 100%;
+  border: 1px solid red;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+
+  padding: 18px 24px;
+  border-radius: 5px;
   font-size: 15px;
+  font-weight: 800;
+  color: white;
+  background-color: #ff9f1b;
+  border: 1px solid #ff9f1b;
+
+  &:hover:not(:disabled){
+    background-color: white;
+    color: #ff9f1b;
+    border: 1px solid #ff9f1b;
+    transition: all 200ms ease-out;
+  }
+
+  &:active{
+    color: white;
+    background-color: #ff9f1b;
+    border: 1px solid #ff9f1b;
+  }
+}
+
+.icon{
+  font-size: 20px;
   margin-right: 8px;
   color: #93a2b1;
+  
 }
 
 input{
