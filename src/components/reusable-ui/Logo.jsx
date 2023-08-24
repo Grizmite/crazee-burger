@@ -27,7 +27,7 @@ const LogoFormStyled = styled.div`
     line-height: 1em;
     font weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px;q
     font-family: "Amatic SC", cursive;
 
   }
