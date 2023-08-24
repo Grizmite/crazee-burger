@@ -3,7 +3,7 @@ import { useState } from "react";
 import { /*Link*/ useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { BiSolidChevronRight } from "react-icons/bi"
-import TextInput from "./TextInput";
+import TextInput from "../../reusable-ui/TextInput";
 import { BsPersonCircle } from "react-icons/bs";
 
 //import { theme } from "src/components/theme/index.js"
