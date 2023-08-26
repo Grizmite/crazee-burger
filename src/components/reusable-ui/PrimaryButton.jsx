@@ -2,9 +2,10 @@
 import { styled } from "styled-components";
 
 
+// eslint-disable-next-line react/prop-types
 export default function PrimaryButton({ label, Icon }) {
   return (
-    <PrimaryButtonStyled className="button-with-icon">
+    <PrimaryButtonStyled>
         <span>{ label }</span>
         { Icon }
         </PrimaryButtonStyled>
@@ -14,9 +15,9 @@ export default function PrimaryButton({ label, Icon }) {
 
 //STYLE
 
-const PrimaryButtonStyled = styled.button'
+const PrimaryButtonStyled = styled.button`
 
-    width: 100%;
+width: 100%;
     border: 1px solid red;
     display: inline-flex;
     justify-content: center;
@@ -46,12 +47,6 @@ const PrimaryButtonStyled = styled.button'
       background-color: #ff9f1b;
       border: 1px solid #ff9f1b;
     }
+    `;
+
   
-  
-  .icon{
-    font-size: 20px;
-    margin-right: 8px;
-    color: #93a2b1;
-    
-  }
-  ';

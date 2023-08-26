@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { BiSolidChevronRight } from "react-icons/bi"
 import TextInput from "../../reusable-ui/TextInput";
 import { BsPersonCircle } from "react-icons/bs";
+import PrimaryButton from "../../reusable-ui/PrimaryButton";
 
 //import { theme } from "src/components/theme/index.js"
 
@@ -33,11 +34,8 @@ function LoginForm() {
         <h1>Bienvenue chez nous !</h1>
         <hr />
         <h2>Connectez-vous</h2>
-        <TextInput value={ inputValue } onChange={ handleChange } placeHolder={"Entrez votre nom"} insertBeforeInput={ <BsPersonCircle className="icon"/>} required />
-        <button className="button-with-icon">
-        <span>Connexion</span>
-        <BiSolidChevronRight className="icon" />
-        </button>
+        <TextInput value={ inputValue } onChange={ handleChange } placeholder={"Entrez votre nom"} insertBeforeInput={ <BsPersonCircle className="icon"/>} required />
+        <PrimaryButton label={"Acceder à mon espace"} Icon={<BiSolidChevronRight className="icon" />} />
       </LoginFormStyle>
     </div>
   );

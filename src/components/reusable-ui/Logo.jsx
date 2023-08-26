@@ -1,5 +1,6 @@
 //Logo.jsx
 import { styled } from 'styled-components';
+import { theme } from '/Users/Chabert/Desktop/crazee-burger/src/components/theme/index.js';
 
 export default function Logo() {
   return (
@@ -22,10 +23,10 @@ const LogoFormStyled = styled.div`
   h1{
     display: inline;
     text-align: center;
-    color: #ffa01b;
-    font-size: 100px;
+    color: ${theme.colors.primary};
+    font-size: ${theme.fonts.XL};
     line-height: 1em;
-    font weight: 700;
+    font weight: ${theme.fonts.bold};
     text-transform: uppercase;
     letter-spacing: 1.5px;q
     font-family: "Amatic SC", cursive;
