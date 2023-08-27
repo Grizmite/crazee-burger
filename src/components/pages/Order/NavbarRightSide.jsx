@@ -1,26 +1,31 @@
-import { Link, useParams } from "react-router-dom";
+//import { Link, useParams } from "react-router-dom";
 import { styled } from "styled-components";
+import Profile from "./Profile";
 
 
 // eslint-disable-next-line react/prop-types
 export default function NavbarRightSide() {
 
-    const { username } = useParams();
-
-
   return (
     <NovbarRightSideStyled className="right-side">
-    RIGHT
-    <h1>Hello { username }</h1>
-  <Link to="/">
-      <button>Deconnexion</button>
-  </Link>
+  {/* <div className="admin-button">Admin Button</div>*/}
+    <Profile />
     </NovbarRightSideStyled>
   )
 }
 
 const NovbarRightSideStyled = styled.div`
 
-    background: white;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+
+   /* .admin-button{
+      background: lightblue;
+    }*/
+
+    .profil{
+      background: yellow;
+    }
 
 `
