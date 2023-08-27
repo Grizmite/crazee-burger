@@ -1,6 +1,9 @@
+//Navbar.jsx
 import { styled } from "styled-components";
 import NavbarRightSide from "./NavbarRightSide";
+import Logo from "/Users/Chabert/Desktop/crazee-burger/src/components/reusable-ui/Logo.jsx"
 
+// eslint-disable-next-line react/prop-types
 export default function Navbar() {
 
 
@@ -8,8 +11,8 @@ export default function Navbar() {
     //AFFICHAGE
   return (
     <NavbarStyled>
-
-    <div className="left-side">LEFT</div>
+    <Logo className={"logo-login-page"}/>
+    <div className="left-side" />
     <NavbarRightSide />
   </NavbarStyled>
   )
@@ -20,13 +23,14 @@ const NavbarStyled = styled.nav`
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
 
     .left-side{
         background: pink;
     }
 
-    .right-side{
-        background: white;
-
+    .logo-login-page{
+        transform: scale(0.4);
+       
     }
 `
