@@ -19,11 +19,13 @@ export default function Navbar() {
 }
 
 const NavbarStyled = styled.nav`
-    background: blue;
+    background: white;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
     .left-side{
         background: pink;
@@ -31,6 +33,5 @@ const NavbarStyled = styled.nav`
 
     .logo-login-page{
         transform: scale(0.4);
-       
     }
 `

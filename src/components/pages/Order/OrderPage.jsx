@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import Navbar from "./Navbar";
-import Main from "./Main";
+import MainOrder from "./MainOrder";
 
 export default function OrderPage() {
 
@@ -15,7 +15,7 @@ export default function OrderPage() {
       <OrderPageStyled>
       <div className="container">
       <Navbar />
-      <Main />
+      <MainOrder />
         </div>
       </OrderPageStyled>
     )
@@ -34,7 +34,7 @@ export default function OrderPage() {
     width: 1400px;
     display: flex;
     flex-direction: column;
-
+    border-radius: 15px;
  
   }
   `
