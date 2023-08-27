@@ -1,10 +1,10 @@
-import { Link, useParams } from "react-router-dom";
 import { styled } from "styled-components";
+import Navbar from "./Navbar";
+import Main from "./Main";
 
 export default function OrderPage() {
 
     //ETAT
-   const { username } = useParams();
    
     //COMPORTEMENT
 
@@ -12,11 +12,9 @@ export default function OrderPage() {
     return (
       <OrderPageStyled>
       <div className="container">
-        <h1>Hello { username }</h1>
-        <Link to="/">
-            <button>Deconnexion</button>
-        </Link>
-        </div>  
+      <Navbar />
+      <Main />
+        </div>
       </OrderPageStyled>
     )
   }
@@ -32,6 +30,10 @@ export default function OrderPage() {
     background: red;
     height: 95vh;
     width: 1400px;
+    display: flex;
+    flex-direction: column;
+
+ 
   }
   `
   
