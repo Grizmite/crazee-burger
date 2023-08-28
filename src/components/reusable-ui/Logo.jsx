@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { theme } from '/Users/Chabert/Desktop/crazee-burger/src/components/theme/index.js';
+import { theme } from '../../theme/index.js';
 
 // eslint-disable-next-line react/prop-types
 export default function Logo({className, onClick}) {
