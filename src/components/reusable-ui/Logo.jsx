@@ -2,9 +2,9 @@ import { styled } from 'styled-components';
 import { theme } from '/Users/Chabert/Desktop/crazee-burger/src/components/theme/index.js';
 
 // eslint-disable-next-line react/prop-types
-export default function Logo({className}) {
+export default function Logo({className, onClick}) {
   return (
-    <LogoFormStyled className={className}>
+    <LogoFormStyled className={className} onClick={ onClick }>
      <h1>Crazee</h1>
      <img src="/images/logocrazeeburger.png" alt="logo-crazee-burger"/>
      <h1>Burger</h1>
