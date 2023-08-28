@@ -1,24 +1,22 @@
-//Logo.jsx
 import { styled } from 'styled-components';
-import { theme } from '/Users/Chabert/Desktop/crazee-burger/src/components/theme/index.js';
+import { theme } from '../../theme/index.js';
 
-export default function Logo() {
+// eslint-disable-next-line react/prop-types
+export default function Logo({className, onClick}) {
   return (
-    <LogoFormStyled>
+    <LogoFormStyled className={className} onClick={ onClick }>
      <h1>Crazee</h1>
-     <img src="public/images/logocrazeeburger.png" alt="logo-crazee-burger"/>
+     <img src="/images/logocrazeeburger.png" alt="logo-crazee-burger"/>
      <h1>Burger</h1>
     </LogoFormStyled>
   )
 }
-
 const LogoFormStyled = styled.div`
   background: transparent; 
-  /*border: 1px solid blue;*/
   color: white;
   display: flex;
   align-items: center;
-  /*transform: scale(2.5);(duplique le fond sans raison --> est utilisé pour être dynamique*/
+  
 
   h1{
     display: inline;
@@ -28,17 +26,19 @@ const LogoFormStyled = styled.div`
     line-height: 1em;
     font weight: ${theme.fonts.bold};
     text-transform: uppercase;
-    letter-spacing: 1.5px;q
+    letter-spacing: 1.5px;
     font-family: "Amatic SC", cursive;
+   
 
   }
 
   img{
     object-fit: contain;
     object-position: center;
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     margin: 0 5px;
+
 
   }
 
@@ -55,4 +55,5 @@ const LogoFormStyled = styled.div`
     z-index: -1;
     opacity: 0;
   }
+
 `

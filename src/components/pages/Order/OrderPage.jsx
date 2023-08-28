@@ -1,28 +1,28 @@
-import { Link, useParams } from "react-router-dom";
 import { styled } from "styled-components";
+import Navbar from "./Navbar";
+import MainOrder from "./MainOrder";
 
 export default function OrderPage() {
 
     //ETAT
-   const { username } = useParams();
    
     //COMPORTEMENT
+
+
 
     //AFFICHAGE
     return (
       <OrderPageStyled>
       <div className="container">
-        <h1>Hello { username }</h1>
-        <Link to="/">
-            <button>Deconnexion</button>
-        </Link>
-        </div>  
+      <Navbar />
+      <MainOrder />
+        </div>
       </OrderPageStyled>
     )
   }
 
   const OrderPageStyled = styled.div`
-  background-color: orange;
+  background-color: #ffa01b;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -32,6 +32,10 @@ export default function OrderPage() {
     background: red;
     height: 95vh;
     width: 1400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+ 
   }
   `
   
