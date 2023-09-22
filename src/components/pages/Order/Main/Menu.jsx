@@ -1,10 +1,20 @@
+import { useState } from 'react';
 import { styled } from 'styled-components';
+import { fakeMenu1 } from '../../../../fakeData/fakeMenu';
 
 
 export default function Menu() {
-  return (
+  
+        //Etat
+        const [products, setProducts] = useState(fakeMenu1);
+
+        //comportement
+  
+        //Affichage
+    return (
+
     <MenuStyled>
-    MENU PRINCIPAL      
+        
     </MenuStyled>
   )
 }
