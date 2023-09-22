@@ -1,6 +1,6 @@
-import { styled } from "styled-components";
-import Navbar from "./Navbar";
-import MainOrder from "./MainOrder";
+import { styled } from "styled-components"; 
+import MainOrder from "./Main/MainOrder";
+import Navbar from './navbar/Navbar';
 
 export default function OrderPage() {
 
