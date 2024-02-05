@@ -30,6 +30,7 @@ const NavbarStyled = styled.nav`
     padding: 0 10px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    boder-bottom: 1px solid #808080;
 
     .left-side{
         background: pink;
